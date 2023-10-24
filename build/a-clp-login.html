@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Admin Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="monitor:justify-start flex h-screen justify-center items-center" style="background-image: url(img/Admin/ap-loginbg.png);">
+    <!--White Box-->
+    <div class="monitor:w-1/2 monitor:h-screen monitor:m-0 monitor:pl-20 monitor:pt-10 monitor:justify-start monitor:rounded-none monitor:gap-7 ipadmini:w-[600px] ipadmini:justify-center ipadmini:gap-10 ipadmini:p-10 flex flex-col gap-5 bg-white w-fit h-fit rounded-[20px] m-5 p-2 pb-5">
+        <!--Image Logo of FoodBud-->
+        <div class="monitor:w-fit monitor:justify-start flex justify-center items-center mt-5 w-full h-fit">
+            <img class="monitor:w-60 ipadmini:w-1/2 w-1/2" src="img/Client Portal/Header/H-FoodbudLogo.png" alt="">
+        </div>
+        
+        <!--Welcome Banner-->
+        <div class="monitor:p-0 monitor:w-[401px] font-heading p-3 w-full h-fit">
+            <p class="text-primary250 font-bold text-heading36 ipadmini:text-heading14 monitor:text-heading14">User Log In</p>
+            <p class="monitor:text-heading36 ipadmini:text-heading36">Welcome back, please login to your account</p>
+        </div>
+
+        <!--Form Section-->
+        <form class="monitor:px-0 monitor:w-[471px] monitor:gap-2 flex flex-col gap-3 w-full h-fit px-3 font-heading font-medium text-body" action="">
+            <div class="flex flex-col gap-2">
+                <label class="monitor:text-title13 ipadmini:text-heading36 text-title24" for="email">Email</label>
+                <input class="w-full p-2 rounded-lg border monitor:text-title13 ipadmini:p-4 ipadmini:text-title13 " type="text" placeholder="Enter Email">
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <label class="monitor:text-title13 ipadmini:text-heading36 text-title24" for="password">Password</label>
+                <input class="w-full p-2 rounded-lg border monitor:text-title13 ipadmini:p-4 ipadmini:text-title13" type="password" placeholder="Enter Password">
+            </div>
+        
+            <div class="flex flex-col gap-3 monitor:gap-4 monitor:text-title24 ipadmini:text-heading36 ipadmini:gap-8">
+                <p class="text-body ipadmini:text-heading36">Forgot your <span class="text-primary250 underline"><a href="clp-findaccount.html">password?</a></span></p>
+                <button type="submit" class="bg-primary250 text-white p-2 rounded-lg monitor:text-title13 monitor:w-36 monitor:h-11 monitor:p-0 ipadmini:p-4 ipadmini:text-heading36">Login</button>
+            </div>
+        </form>
+
+        <!--Not an Admin Section-->
+        <div class="flex flex-col gap-3 justify-normal-start items-center h-fit font-heading font-medium text-gray monitor:text-title24 monitor:pl-0 ipadmini:text-heading36 pl-5 ">
+            <p class="w-full monitor:text-title13 ipadmini:text-heading36 text-body">No account yet? <span  class="text-primary250 underline"><a href="http://facebook.com">Book Now!</a></span></p>
+            <p class="w-full monitor:text-title13 ipadmini:text-heading36 text-body">Are you an admin? <span class="underline text-secondary500"><a href="">Log in here</a></span></p>
+        </div>
+    </div>
+</body>
+</html>
