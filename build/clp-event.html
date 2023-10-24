@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-secondary50">
+    <!--Header-->
+    <header class="bg-white w-full h-16 sticky top-0 grid grid-cols-12 gap-8 z-[1] pl-40 pr-40 border-b-2 border-primary200" >
+        <div class="col-start-1 col-span-3 w-fit h-fit m-5">
+        <a href="#home"><img src="img/Client Portal/Header/H-FoodbudLogo.png" alt="Food Bud Logo" /></a>
+        </div>
+
+        <div class="col-start-4 col-span-6 flex justify-evenly font-tb text-secondary500 p-5 font-bold">
+        <a href="clp-home.html">HOME</a>
+        <a class="text-primary200" href="clp-event.html">EVENT</a>
+        <a href="clp-appointment.html">APPOINTMENT </a>
+        <a href="#accnts">ACCOUNTS</a>
+        </div>
+
+        <div class="col-start-12 flex justify-between w-full h-fit mt-5 mb-5">
+            <img class="" src="img/Client Portal/Header/H-Notificationbell.png" alt="Notification bell" />
+            <img src="img/Client Portal/Header/H-ProfileIcon.png" alt="Account Logo" />
+        </div>
+    </header>
+
+    <!--Body Section-->
+    <section>
+        <div class="grid grid-cols-12 gap-8 pl-20 pr-20 h-fit">
+            <!--Pink Center Box-->
+            <div class="col-span-12 bg-primary200 h-fit mt-5 flex rounded-md">
+                <!--My Event Title-->
+                <div class="w-[200px] text-[32px] font-bold font-heading pl-5 pt-5 text-center">My Events</div> 
+
+                <!--White Box for Event Details-->
+                <div class="w-[1033px] h-[566px] bg-white rounded-[20px] m-6 block ">
+                    <!--Event Detail per line - No.1-->
+                    <div class="border border-gray border-opacity-10 rounded-[20px] w-[975px] h-fit flex justify-between m-5">
+                        <!--Name of Celebrant Heading-->
+                        <div class="p-5 w-[450px]">
+                            <p class="font-heading text-heading14 font-bold">Juan Dela Cruz</p>
+                            <p class="font-tbc font-medium text-body">Budget Package, 10th Birthday, Cocomelon, 100 Adults, 50 Kids </p>
+                        </div>
+
+                         <!--Details - Food Tasting-->
+                         <div class="p-5 w-30">
+                            <p class="font-tbc font-medium text-[24px]">Food Tasting</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-right text-green">July 15</p>
+                        </div>
+
+                        <!--Details - Online Meeting-->
+                        <div class="p-5 w-40 text-right">
+                            <p class="font-tbc font-medium text-[24px]">Meeting</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-green">August 14</p>
+                        </div>
+
+                        <!--Details - Event Date-->
+                        <div class="p-5 w-40 text-right">
+                            <p class="font-tbc font-medium text-[24px]">August 20</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-orange">Ongoing</p>
+                        </div>
+                    </div>
+
+                    <!--Event Detail per line - No.2-->
+                    <div class="border border-gray border-opacity-10 rounded-[20px] w-[975px] h-fit flex justify-between m-5">
+                        <!--Name of Celebrant Heading-->
+                        <div class="p-5 w-[450px]">
+                            <p class="font-heading text-heading14 font-bold">John Doe</p>
+                            <p class="font-tbc font-medium text-body">Package, Event Type, Theme, X Adults, X kids</p>
+                        </div>
+
+                        <!--Details - Food Tasting-->
+                        <div class="p-5 w-30 ">
+                            <p class="font-tbc font-medium text-[24px]">Food Tasting</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-right text-green">September 15</p>
+                        </div>
+
+                        <!--Details - Online Meeting-->
+                        <div class="p-5 w-40 text-right">
+                            <p class="font-tbc font-medium text-[24px]">Meeting</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-right text-orange">September 14</p>
+                        </div>
+
+                        <!--Details - Event Date-->
+                        <div class="p-5 w-40 text-right">
+                            <p class="font-tbc font-medium text-[24px]">January 15</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-green">Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End of White Box-->
+
+                <!--Template ng Per line na event, pang js or php.
+                    <div class="border border-gray border-opacity-10 rounded-[20px] w-[975px] h-fit flex justify-between m-5">
+                        <div class="p-5 w-[450px]">
+                            <p class="font-heading text-heading14 font-bold">John Doe</p>
+                            <p class="font-tbc font-medium text-body">Package, Event Type, Theme, X Adults, X kids</p>
+                        </div>
+
+                        <div class="p-5 w-30 ">
+                            <p class="font-tbc font-medium text-[24px]">Food Tasting</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-right text-green">September 15</p>
+                        </div>
+
+                        <div class="p-5 w-40 text-right">
+                            <p class="font-tbc font-medium text-[24px]">Meeting</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-right text-orange">September 14</p>
+                        </div>
+
+                        <div class="p-5 w-40 text-right">
+                            <p class="font-tbc font-medium text-[24px]">January 15</p>
+                            <p class="font-tbc font-bold text-title24 w-full text-green">Completed</p>
+                        </div>
+                    </div>
+                -->
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

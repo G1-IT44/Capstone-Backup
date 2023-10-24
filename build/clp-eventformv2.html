@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="bg-white w-full h-16 sticky top-0 grid grid-cols-12 gap-8 z-[1] pl-40 pr-40 border-b-2 border-primary200" >
+        <div class="col-start-1 col-span-3 w-fit h-fit m-5">
+        <a href="#home"><img src="img/Fblogo.png" alt="Food Bud Logo" /></a>
+        </div>
+
+        <div class="col-start-4 col-span-6 flex justify-evenly font-tbc text-base text-secondary500 p-5 font-bold">
+        <a href="clp-home.html">HOME</a>
+        <a class="text-primary200" href="clp-event.html">EVENT</a>
+        <a href="#appt">APPOINTMENT </a>
+        <a href="#accnts">ACCOUNTS</a>
+        </div>
+
+        <div class="col-start-12 flex justify-between w-full h-fit mt-5 mb-5">
+        <img class="" src="img/notifbell.png" alt="Notification bell" />
+        <img src="img/accountlogo.png" alt="Account Logo" />
+        </div>
+    </header>
+
+    <!--Heading Section with image-->
+    <section class="bg-no-repeat bg-cover h-[420px] w-full" style="background-image: url(img/loginpic.png);">
+        <div class="w-full h-full grid grid-cols-12 gap-8 pl-40 pr-40">
+            <!--Component for Welcome Banner-->
+            <div class="col-start-2 col-span-6 text-white mt-40">
+                <p class="font-heading font-bold text-[60px] w-full">Budget Package</p>
+                
+                <!--Secondary opening text-->
+                <div class="font-tbc font-medium text-title24">
+                    <p>We are thrilled to have you join us at this event—it wouldn't be the same without you!
+                    Please make sure to fill out the form so we can reserve your exciting event.</p>
+                    <p class="mt-5">If you have any questions or need assistance, feel free to reach out to us.</p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!--Section for the form-->
+    <section class="w-full h-fit bg-secondary200">
+        <div class="grid grid-cols-12 gap-8 pr-20 pl-20 pt-20">
+            <!--Textbox to fill up-->
+            <div class="col-start-2 col-span-6 text-bl font-heading font-semibold text-[20px] text-white">
+                <form class="grid grid-cols-6 gap-8" action="">
+                    <!--1st Line-->
+                    <div class="col-start-1 col-span-4">
+                        <label for="Celebrant Name">Celebrant Name</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="Juan Dela Cruz">
+                    </div>
+                    
+                    <div class="col-start-5">
+                        <label for="Age">Age</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="number" placeholder="10">
+                    </div>
+                    
+                    <div class="col-start-6">
+                        <label for="M/F">M/F</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="M">
+                    </div>
+
+                    <!--2nd Line-->
+                    <div class="col-start-1 col-span-2">
+                        <label for="Event Date">Event Date</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="mm/dd/yyyy">
+                    </div>
+
+                    <div class="col-start-3 col-span-2">
+                        <label for="Prep Time">Prep Time</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="hh:mm"> 
+                    </div>
+                  
+                    <div class="col-start-5 col-span-2">
+                        <label for="Start Time">Start Time</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="hh:mm">
+                    </div>
+
+                    <!--3rd Line-->
+                    <div class="col-span-6">
+                        <label for="Type of Event">Type of Event</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="10th Birthday and Christening">
+                    </div>
+    
+                    <div class="col-span-6">
+                        <label for="Theme of Event">Theme of Event</label>
+                        <textarea class="rounded-[20px] w-full h-28 p-3 text-title24 text-black break-words" cols="30" rows="10" wrap="hard" placeholder="Cocomelon (Please put cocomelon beside the bench chair)"></textarea>
+                    </div>
+                        
+                    <div class="col-span-6">
+                        <label for="Color Theme">Color Theme</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="Red, Orange, Yellow, Blue, Violet (All pastel colors)">
+                    </div>
+                    
+                    <!--4th Line-->
+                    <div class="col-span-2">
+                        <label for="Venue Time">Venue Time</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="hh:mm">
+                    </div>
+
+                    <div class="col-start-3 col-span-2">
+                        <label for="Venue Type">Venue Type</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="Indoor or Outdoor">
+                    </div>
+                        
+                    <div class="col-start-5 col-span-2">
+                        <label for="Venue Floor">Venue Floor</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="2nd Floor">
+                    </div>
+
+                    <div class="col-span-6">
+                        <label for="Venue Address">Venue Address</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="Casa Briella Private Pool and Events Place">
+                    </div>
+
+                    <div class="col-span-6">
+                        <label for="Google Pin Location">Google Pin Location</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="https://maps.app.goo.gl/9an3Sr64HF9EoqWn9">
+                    </div>
+
+                    <!--Head Count-->
+                    <div class="col-span-2">
+                        <label for="Headcount">Head Count:</label>
+                    </div>
+
+                    <div class="col-span-1">
+                        <label for="Adults">Adults</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="number" placeholder="100">
+                    </div>
+
+                    <div class="col-span-1">
+                        <label for="Kids">kids</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="number" placeholder="50">
+                    </div>
+
+                    <!--Food set-->
+                    <div class="col-start-1 col-span-2">
+                        <label for="Set">Set</label>
+                        <select class="rounded-[20px] w-full p-3 text-title24 text-black" name="Food Set">
+                            <option value="Set A">Set A</option>
+                            <option value="Set B">Set B</option>
+                            <option value="Set C">Set C</option>
+                            <option value="Set D">Set D</option>
+                            <option value="Set E">Set E</option>
+                            <option value="Set F">Set F</option>
+                        </select>
+                    </div>
+
+                    <div class="col-start-3 col-span-2">
+                        <br><button class="font-tbc font-medium text-title24 bg-primary1000 rounded-[20px] p-3 pl-10 pr-10">Add Dish</button>
+                    </div>
+
+                    <!--Food Line-->
+                    <div class="col-span-6">
+                        <label for="Pork or Chicken">Pork or Chicken</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="Pork Caldereta">
+                    </div>
+
+                    <div class="col-span-6">
+                        <label for="Fish">Fish</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="Fish Fillet with Tartar Sauce">
+                    </div>
+
+                    <div class="col-span-6">
+                        <label for="Pasta">Pasta</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="Fettucini Alfredo">
+                    </div>
+
+                    <div class="col-span-6">
+                        <label for="Dessert">Dessert</label>
+                        <input class="rounded-[20px] w-full p-3 text-title24 text-black" type="text" placeholder="Coffee Jelly">
+                    </div>
+
+                    <!--Additional Services Line-->
+                    <div class="col-span-6">
+                        <label for="Venue Address">Venue Address</label>
+                        <textarea class="rounded-[20px] w-full h-32 p-3 text-title24 text-black break-words" cols="30" rows="10" wrap="hard" placeholder="• Photobooth
+• Lights and Sounds
+• Host Magician
+• Lechon Table"></textarea>
+                    </div>
+
+                    <!--Terms and Condition-->
+                    <div class="col-span-6">
+                        <input type="radio" name="Terms and Condition" id="">
+                        <label class="text-title24 font-tbc font-medium" for="TermsConditions">Upon filling out this form and sending of my payment, I acknowledge that I have read and accept the 
+                            <a href="https://www.facebook.com/foodbudevents/menu/?id=100069807554160&sk=menu">terms and conditions.</a></label>
+                    </div>
+
+                    <!--Submit and Back Button-->
+                    <div class="col-start-3 col-span-5 w-fit mb-5">
+                        <button class="font-tbc font-medium text-title24 bg-primary1000 rounded-[20px] p-3 pl-10 pr-10" type="submit">Save</button>
+                        <button class="font-tbc font-medium text-title24 text-black bg-white rounded-[20px] p-3 pl-10 pr-10" type="reset">Clear</button>
+                        <button class="font-tbc font-medium text-title24 text-black bg-white rounded-[20px] p-3 pl-10 pr-10">Back</button>
+                    </div>
+                </form>
+            </div>
+
+            <!--Other Half SoE and FS-->
+            <div class="block col-start-8 col-span-5">
+                <!--Summary of Expenses-->
+                <div class="h-fit col-start-8 col-span-5 flex justify-center">
+
+                    <!--White Box-->
+                    <div class="bg-white w-fit h-fit rounded-[20px] drop-shadow-2xl">
+                        <!--Summary Title Heading-->
+                        <div class="w-full font-heading font-bold text-heading36 pr-10 pl-10 pt-10">
+                            <p>Summary</p>
+                        </div>
+
+                        <!--Computation Breakdown-->
+                        <div class="p-5 pr-10 pl-10 font-tbc text-body font-medium">
+                            
+                            <!--Event Type-->
+                            <div class="font-tbc font-medium text-title24">
+                                <p>Budget Package</p>
+                            </div>
+
+                            <!--Breakdown Detailed-->
+                            <div class="font-tbc font-medium text-title24">
+                                <div class="flex justify-between">
+                                    <div class="w-60">
+                                        <p>150 pax</p>
+                                    </div>
+
+                                    <div class="w-fit">
+                                        <p>67,000</p>
+                                    </div>
+                                </div>
+
+                                <!--Addons 1-->
+                                <div class="flex justify-between">
+                                    <div class="w-60">
+                                        <p>Lights and Sounds</p>
+                                    </div>
+
+                                    <div class="w-fit">
+                                        <p>5,000</p>
+                                    </div>
+                                </div>
+
+                                <!--Addons 2-->
+                                <div class="flex justify-between">
+                                    <div class="w-60">
+                                        <p>Photobooth</p>
+                                    </div>
+
+                                    <div class="w-fit">
+                                        <p>3,500</p>
+                                    </div>
+                                </div>
+
+                                <!--Addons 3-->
+                                <div class="flex justify-between">
+                                    <div class="w-60">
+                                        <p>Host/Magician</p>
+                                    </div>
+
+                                    <div class="w-fit">
+                                        <p>5,500</p>
+                                    </div>
+                                </div>
+
+                                <!--Addons 4-->
+                                <div class="flex justify-between">
+                                    <div class="w-60">
+                                        <p>Lechon Table</p>
+                                    </div>
+
+                                    <div class="w-fit">
+                                        <p>700</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Computation Breakdown End-->
+
+                        <!--Subtotal-->
+                        <div class="w-full p-10 font-tbc font-bold text-title24 text-right">
+                            <p>Subtotal: 81,700 PHP</p>
+                        </div>
+                    </div>
+                    <!--White Box End-->
+                </div>
+                <!--Expenses Summary End-->
+
+                <!--Image Food Set-->
+                <div class="col-start-8 span5 mt-[700px] flex justify-center">
+                    <img src="img/Food - Budget.png" alt="Food Set - Budget">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+</body>
+</html>

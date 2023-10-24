@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex justify-between w-screen h-screen iphone:justify-center iphone:items-center iphone:w-screen iphone:h-screen max-ipadmini:justify-center max-ipadmini:items-center max-ipadmini:w-screen max-ipadmini:h-screen">
+        <!--Left side of the Login Page-->
+        <div class="w-1/2 iphone:z-10 iphone:w-80 iphone:h-fit max-ipadmini:z-10 max-ipadmini:h-fit">
+            <div class="w-full h-full p-14 pl-20 iphone:bg-white iphone:rounded-[20px] iphone:p-5 iphone:pl-4 max-ipadmini: bg-white max-ipadmini:rounded-[20px] max-ipadmini:p-5 max-ipadmini:pl-4">
+                <img src="img/Client Portal/Header/H-FoodbudLogo.png" class="w-40 mb-7 iphone:w-1/2 iphone:ml-[75px] max-ipadmini:w-1/2 max-ipadmini:ml-[75px]"/>
+                
+                <!--Upper Section of Login-->
+                <div class="flex flex-col justify-start items-start gap-7">
+                    <div class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative font-heading">
+                        <p class="self-stretch flex-grow-0 flex-shrink-0 w-[471px] text-heading14 font-bold text-left text-secondary500 iphone:text-title24 iphone:font-semibold max-ipadmini:text-title13 max-ipadmini:font-semibold">Admin Log In</p>
+                        <p class="flex-grow-0 flex-shrink-0 w-[342px] text-heading36 font-medium text-left text-[#303030] iphone:text-title24 iphone:w-full max-ipadmini:text-title13 max-ipadmini:w-full">Welcome back admin, please login to your account!</p>
+                    </div>
+    
+                    <!--Form Section-->
+                    <form class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3" action="">
+                        <div class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+                            <label class="flex-grow-0 flex-shrink-0 w-[79.92px] h-[23.33px] font-heading text-title13 font-medium text-left text-[#1e1e1e] iphone:text-title24" for="">Email</label>
+                            <input class="self-stretch flex-grow-0 flex-shrink-0 w-[471px] p-3 rounded-[5px] font-tbc text-title13 bg-white border-[0.83px] border-[#4d3a3a] iphone:w-full iphone:text-title24" type="text" placeholder="juandelacruz@gmail.com">
+                        </div>
+    
+                        <div class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+                            <label class="flex-grow-0 flex-shrink-0 w-[79.92px] h-[23.33px] font-heading text-title13 font-medium text-left text-[#1e1e1e] iphone:text-title24" for="">Password</label>
+                            <input class="self-stretch flex-grow-0 flex-shrink-0 w-[471px] p-3 rounded-[5px] font-tbc text-title13 bg-white border-[0.83px] border-[#4d3a3a] iphone:w-full" type="password" placeholder="********" maxlength="16">
+                        </div>
+    
+                        <p class="flex-grow-0 flex-shrink-0 w-[227px] h-[23px] text-base font-medium text-left font-tbc">
+                            <span class="flex-grow-0 flex-shrink-0 w-[227px] h-[23px] text-base font-medium text-left text-[#1e1e1e] iphone:text-body">Forgot your</span>
+                            <span class="flex-grow-0 flex-shrink-0 w-[227px] h-[23px] text-base font-medium text-secondary500 iphone:text-body"><a href="fa-findaccount.html">password?</a></span>
+                        </p>
+    
+                        <button class="rounded-[5px] w-36 p-2 mt-5 bg-secondary500 text-title13 font-heading text-white iphone:w-full iphone:text-title24" type="submit">Login</button>
+                    </form>
+                </div>
+                <!--Upper Section of Login-->
+      
+                <!--Lower Section of Login-->
+                <div class="flex flex-col justify-start gap-6 pt-7 iphone:justify-center">
+                    <div class="flex gap-3 font-heading w-full iphone:justify-center">
+                        <p class="text-title13 font-medium text-left iphone:text-body">
+                        <span class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-[#1e1e1e]/50">Not an admin? </span>
+                        <span class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-[#2674b3] underline"><a href="">Back to User Login</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Right Half of the Login-->
+        <img src="img/Admin/ap-loginbg.png" class="h-screen iphone:absolute iphone:w-screen iphone:h-screen">
+
+    </div>
+</body>
+</html>

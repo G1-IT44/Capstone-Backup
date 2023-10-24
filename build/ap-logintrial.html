@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Admin Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="monitor:justify-start flex h-screen border justify-center items-center" style="background-image: url(img/Admin/ap-loginbg.png);">
+    <!--White Box-->
+    <div class="monitor:w-1/2 monitor:h-screen monitor:m-0 monitor:pl-20 monitor:pt-14 monitor:justify-start monitor:rounded-none monitor:gap-7 ipadmini:w-[600px] ipadmini:justify-center ipadmini:gap-10 ipadmini:p-10 flex flex-col gap-5 bg-white w-fit h-fit rounded-[20px] m-5 p-2 pb-5">
+        <!--Image Logo of FoodBud-->
+        <div class="monitor:w-fit monitor:justify-start flex justify-center items-center mt-5 w-full h-fit">
+            <img class="monitor:w-60 ipadmini:w-3/4" src="img/Client Portal/Header/H-FoodbudLogo.png" alt="">
+        </div>
+        
+        <!--Welcome Banner-->
+        <div class="monitor:p-0 monitor:w-[401px] font-heading p-3 w-full h-fit">
+            <p class="text-secondary300 font-bold ipadmini:text-heading14 monitor:text-heading14">Admin Log In</p>
+            <p class="monitor:text-heading36 ipadmini:text-title13">Welcome back admin, please login to your account!</p>
+        </div>
+
+        <!--Form Section-->
+        <form class="monitor:px-0 monitor:w-[471px] flex flex-col gap-3 w-full h-fit px-3 font-heading font-medium text-body" action="">
+            <div class="flex flex-col gap-2">
+                <label class="monitor:text-title13 ipadmini:text-heading36 text-title24" for="email">Email</label>
+                <input class="w-full p-2 rounded-lg border monitor:text-title13 ipadmini:p-4 ipadmini:text-title13 " type="text" placeholder="Enter Email">
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <label class="monitor:text-title13 ipadmini:text-heading36 text-title24" for="password">Password</label>
+                <input class="w-full p-2 rounded-lg border monitor:text-title13 ipadmini:p-4 ipadmini:text-title13" type="password" placeholder="Enter Password">
+            </div>
+        
+            <div class="flex flex-col gap-3 monitor:text-title24 ipadmini:text-heading36 ipadmini:gap-8">
+                <p>Forgot your <span class="text-secondary300 underline">password?</span></p>
+                <button class="bg-secondary500 text-white p-2 rounded-lg monitor:text-title13 monitor:w-36 monitor:h-11 monitor:p-0 ipadmini:p-4">Login</button>
+            </div>
+        </form>
+
+        <!--Not an Admin Section-->
+        <div class="flex justify-center items-center h-fit font-heading font-medium text-gray text-body monitor:text-title24 monitor:justify-start ipadmini:text-heading36">
+            <p>Not an admin? <span class="underline text-secondary500">Back to User Login</span></p>
+        </div>
+    </div>
+</body>
+</html>
