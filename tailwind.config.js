@@ -42,7 +42,7 @@ module.exports = {
 
     //Accent Color - another Blue
       accent50: "#e6f6fe",
-      accent100: "#b1e4cf",
+      accent100: "#b1e4fc",
       accent200: "#8bd7fa",
       accent300: "#56c5f8",
       accent400: "#35baf6",
