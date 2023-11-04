@@ -72,6 +72,10 @@ module.exports = {
     },
 
     extend: {
+      flex: {
+        'ooh': '2 2 100%'
+      },
+
       fontFamily: {
         //Page Visitor
           lalezar: ['Lalezar'],

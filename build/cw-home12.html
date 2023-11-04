@@ -7,24 +7,49 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="w-screen h-screen">
-     <!--Main navigation-->
-     <div class="flex justify-between w-screen h-fit px-4 py-2 fixed">
-        <!--Hamburger Menu-->
-        <div class="text-[24px] text-white">&#9776</div>
+    <!--HeaderSEction-->
+    <div class=" monitor:flex hidden justify-between items-center flex-grow-0 flex-shrink-0 w-screen h-16 overflow-hidden px-40 bg-white border-t-0 border-r-0 border-b-2 border-l-0 border-[#f8b9cf]">
+        <div class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-3">
+            <img src="img/Client Portal/Header/H-FoodbudLogo.png" class="flex-grow-0 flex-shrink-0 w-[105.09px] h-8 object-cover"/>
+        </div>
 
-        <!--Login Button-->
-        <div>
-             <a class="font-tbc font-semibold text-title24 " href="">
-                <button class="border text-white text-body p-1.5 px-4 rounded-md">Sign In</button>
-            </a>
+        <!--Gawin A tag yung mga navigation-->
+        <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[756px] relative gap-[50px] text-base font-bold text-center text-secondary400">
+            <a class="text-primary300" href="cw-home.html">Home</a>
+            <a class="hover:text-secondary500" href="a-cw-aboutus.html">About Us</a>
+            <a class="hover:text-secondary500" href="">Packages</a>
+            <a class="hover:text-secondary500" href="cw-gallery.html">Gallery</a>
+            <a class="hover:text-secondary500" href="">FAQs</a>
+            <a class="hover:text-secondary500" href="">Contact Us</a>
+        
+            <!--Button for Sign In-->
+            <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 h-9 relative gap-[50px] px-4 py-2 rounded-[5px] bg-[#ed4b82]">
+              <a href="a-clp-login.html" target="_blank">
+              <button class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">Sign In</button>
+            </div></a>
         </div>
     </div>
-    <!--End of Main Navigation-->
+    <!--End of Header Section-->
     
     <!--Hero Section-->
-    <div class="flex flex-col gap-10 justify-center items-center h-[472px] text-center text-white bg-cover bg-center bg-no-repeat" style="background-image: url(img/CW-Hero.png);">
+    <div class="monitor:pb-0 monitor:items-start monitor:text-left monitor:px-40 monitor:h-[744px] ipadmini:gap-14 flex flex-col gap-10 justify-center items-center h-fit pb-40 text-center text-white bg-cover bg-center bg-no-repeat" style="background-image: url(img/CW-Hero.png);">
+         
+        <!--Main navigation-->
+        <div class="monitor:hidden flex justify-between w-screen h-fit p-4">
+            <!--Hamburger Menu-->
+            <div class="text-[24px] text-white">&#9776</div>
+
+            <!--Login Button-->
+            <div class="">
+                <a class="font-tbc font-semibold text-title24 " href="">
+                    <button class="border text-white text-body p-1.5 px-4 rounded-md">Sign In</button>
+                </a>
+            </div>
+        </div>
+        <!--End of Main Navigation-->
+
         <!--Opening Banner-->
-        <div class="flex flex-col gap-5">
+        <div class="monitor:w-1/2 flex flex-col gap-5">
             <p class="font-heading font-bold text-heading14 drop-shadow-sm">Elevate Your Events with us!</p>
             <p class="font-tbc">At Elysium, we are more than just a catering company; we're your culinary partners in creating unforgettable moments.</p>
         </div>
@@ -72,24 +97,35 @@
     <!--End of Our Deals section-->
 
     <!--Party section-->
-    <div class="border flex flex-col gap-10">
+    <div class="flex flex-col gap-10">
         <!--Opening Statement-->
         <div class="flex justify-center pt-10">
             <p class="font-tbc font-bold text-body text-secondary700">Crafting unforgettable moments, one bite at a time.</p>
         </div>
 
         <!--Center Image-->
-        <div class="flex w-full">
-            <img src="img/CW-FVS.jpg" alt="">
+        <div class="monitor:items-center flex w-full border">
+            <div class="monitor:flex hidden">
+                <img src="img/Home/CW - Back.png" alt="">
+            </div>
+            
+            <div class="w-full">
+                <img src="img/CW-FVS.jpg" alt="">
+            </div>
+           
+
+            <div class="monitor:flex hidden">
+                <img src="img/Home/CW - Forward.png" alt="">
+            </div>
         </div>
 
         <!--Party Cards-->
-        <div class="flex flex-wrap gap-4 px-2">
+        <div class="monitor:justify-center monitor:gap-5 monitor:px-0 ipadmini:px-4 ipadmini:py-5 flex snap-mandatory overflow-x-scroll gap-4">
             <!--Card No.1-->
-            <a class="w-full" href="cw-gallery.html">
-                <div class="flex flex-col w-full h-[223px] bg-white rounded-[20px]" style="box-shadow: 0px 100px 80px 0 rgba(0,0,0,0.07), 0px 30.14707374572754px 24.117658615112305px 0 rgba(0,0,0,0.05), 0px 12.521552085876465px 10.017241477966309px 0 rgba(0,0,0,0.04), 0px 4.528800010681152px 3.623039960861206px 0 rgba(0,0,0,0.02);"">
+            <a class="monitor:w-fit w-full" href="cw-gallery.html">
+                <div class="ipadmini:flex-none ipadmini:w-full flex-ooh monitor:w-[288px] monitor:h-[360px] flex flex-col w-40 h-[223px] bg-white rounded-[20px]" style="box-shadow: 0px 100px 80px 0 rgba(0,0,0,0.07), 0px 30.14707374572754px 24.117658615112305px 0 rgba(0,0,0,0.05), 0px 12.521552085876465px 10.017241477966309px 0 rgba(0,0,0,0.04), 0px 4.528800010681152px 3.623039960861206px 0 rgba(0,0,0,0.02);"">
                     <div class="rounded-t-[20px] h-full bg-cover bg-center bg-no-repeat" style="background-image: url(img/CW-Ebox1.jpg);"></div>
-                    <div class="flex justify-center items-center p-2">
+                    <div class="monitor:py-5 flex justify-center items-center p-2">
                         <p class="font-tbc font-bold text-secondary500">Baptismal</p>
                     </div>
                 </div>
@@ -97,10 +133,10 @@
             
 
             <!--Card No.2-->
-            <a class="w-full" href="">
-                <div class="flex flex-col w-full h-[223px] bg-white rounded-[20px]" style="box-shadow: 0px 100px 80px 0 rgba(0,0,0,0.07), 0px 30.14707374572754px 24.117658615112305px 0 rgba(0,0,0,0.05), 0px 12.521552085876465px 10.017241477966309px 0 rgba(0,0,0,0.04), 0px 4.528800010681152px 3.623039960861206px 0 rgba(0,0,0,0.02);"">
+            <a class="monitor:w-fit w-full" href="">
+                <div class="ipadmini:flex-none ipadmini:w-full flex-ooh monitor:w-[288px] monitor:h-[360px] flex flex-col w-40 h-[223px] bg-white rounded-[20px]" style="box-shadow: 0px 100px 80px 0 rgba(0,0,0,0.07), 0px 30.14707374572754px 24.117658615112305px 0 rgba(0,0,0,0.05), 0px 12.521552085876465px 10.017241477966309px 0 rgba(0,0,0,0.04), 0px 4.528800010681152px 3.623039960861206px 0 rgba(0,0,0,0.02);"">
                     <div class="rounded-t-[20px] h-full bg-cover bg-center bg-no-repeat" style="background-image: url(img/CW-Ebox2.jpg);"></div>
-                    <div class="flex justify-center items-center p-2">
+                    <div class="monitor:py-5 flex justify-center items-center p-2">
                         <p class="font-tbc font-bold text-secondary500">Kids Party</p>
                     </div>
                 </div>
@@ -108,10 +144,10 @@
             
 
             <!--Card No.3-->
-            <a class="w-full" href="">
-                <div class="flex flex-col w-full h-[223px] bg-white rounded-[20px]" style="box-shadow: 0px 100px 80px 0 rgba(0,0,0,0.07), 0px 30.14707374572754px 24.117658615112305px 0 rgba(0,0,0,0.05), 0px 12.521552085876465px 10.017241477966309px 0 rgba(0,0,0,0.04), 0px 4.528800010681152px 3.623039960861206px 0 rgba(0,0,0,0.02);"">
+            <a class="monitor:w-fit w-full" href="">
+                <div class="ipadmini:flex-none ipadmini:w-full flex-ooh monitor:w-[288px] monitor:h-[360px] flex flex-col w-40 h-[223px] bg-white rounded-[20px]" style="box-shadow: 0px 100px 80px 0 rgba(0,0,0,0.07), 0px 30.14707374572754px 24.117658615112305px 0 rgba(0,0,0,0.05), 0px 12.521552085876465px 10.017241477966309px 0 rgba(0,0,0,0.04), 0px 4.528800010681152px 3.623039960861206px 0 rgba(0,0,0,0.02);"">
                     <div class="rounded-t-[20px] h-full bg-cover bg-center bg-no-repeat" style="background-image: url(img/CW-Ebox3.jpg);"></div>
-                    <div class="flex justify-center items-center p-2">
+                    <div class="monitor:py-5 flex justify-center items-center p-2">
                         <p class="font-tbc font-bold text-secondary500">Adult Party</p>
                     </div>
                 </div>
@@ -119,10 +155,10 @@
            
 
             <!--Card No.4-->
-            <a class="w-full" href="">
-                <div class="flex flex-col w-full h-[223px] bg-white rounded-[20px]" style="box-shadow: 0px 100px 80px 0 rgba(0,0,0,0.07), 0px 30.14707374572754px 24.117658615112305px 0 rgba(0,0,0,0.05), 0px 12.521552085876465px 10.017241477966309px 0 rgba(0,0,0,0.04), 0px 4.528800010681152px 3.623039960861206px 0 rgba(0,0,0,0.02);"">
+            <a class="monitor:w-fit w-full" href="">
+                <div class="ipadmini:flex-none ipadmini:w-full flex-ooh monitor:w-[288px] monitor:h-[360px] flex flex-col w-40 h-[223px] bg-white rounded-[20px]" style="box-shadow: 0px 100px 80px 0 rgba(0,0,0,0.07), 0px 30.14707374572754px 24.117658615112305px 0 rgba(0,0,0,0.05), 0px 12.521552085876465px 10.017241477966309px 0 rgba(0,0,0,0.04), 0px 4.528800010681152px 3.623039960861206px 0 rgba(0,0,0,0.02);"">
                     <div class="rounded-t-[20px] h-full bg-cover bg-center bg-no-repeat" style="background-image: url(img/CW-Ebox4.jpg);"></div>
-                    <div class="flex justify-center items-center p-2">
+                    <div class="monitor:py-5 flex justify-center items-center p-2">
                         <p class="font-tbc font-bold text-secondary500">Corporate</p>
                     </div>
                 </div>
@@ -131,9 +167,172 @@
     </div>
 
     <!--Start Planning Button section-->
-    <div class="flex justify-center py-10 bg-cover bg-center" style="background-image: url(img/CW-EventBtn.png);">
+    <div class="monitor:py-20 flex justify-center py-10 bg-cover bg-center" style="background-image: url(img/CW-EventBtn.png);">
         <button class="bg-primary400 rounded-[10px] font-tbc font-semibold text-white py-3.5 px-8">Start Planning Your Event!</button>
     </div>
 
+    <!--Our Story section-->
+    <div class="monitor:h-[560px] monitor:items-center monitor:justify-center flex bg-contain px-4 py-10" style="background-image: url(img/CW-Ourstory.png);">
+        <!--Center Box-->
+        <div class="monitor:w-1/2 flex flex-col items-center gap-5 bg-primary250 bg-opacity-50 text-white p-9" style="border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        background: radial-gradient(217.82% 118.25% at 29.01% 56.87%, #F06896 0%, rgba(248, 185, 207, 0.30) 82.5%);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+            <p class="font-heading text-heading14">Our Story.</p>
+            <p class="font-tbc font-bold italic text-title13">Servicing since 2021</p>
+            <p class="font-tbc text-body text-center">We at Elysiums specialize in full time catering services 
+                in and outside Metro Manila, Philippines. 
+                We are based in lorem City but we have traveled 
+                far and around the Luzon area, helping people 
+                create lasting memories of their special day.</p>
+            <p class="font-tbc text-body text-center">We are a trusted name because of a simple recipe: 
+                service, presentation, and quality food. 
+                Fresh ingredients are used to create only the best flavors. 
+                Backed by our experienced staff, 
+                we aim to deliver only the most memorable experience for you. </p>
+            <a class="font-tbc font-bold text-title24" href="">Read More...</a>
+        </div>
+
+    </div>
+
+    <!--Client Testimonials Section-->
+    <div class="monitor:px-40 monitor:bg-cover flex flex-col border items-center gap-10 px-4 py-10 bg-auto bg-top bg-no-repeat" style="background-image: url(img/CW-ReviewBG.png);">
+        <p class="font-heading font-bold text-heading25 text-accent600">CLIENT TESTIMONIALS</p>
+        <!--Review Card No.1-->
+        <a href="cw-review.html">
+            <div class="flex flex-col rounded-[40px] gap-6 px-11 py-7 bg-white" style="box-shadow: 0px 21px 46px 0 rgba(0,0,0,0.1), 0px 0px 0px 0 rgba(0,0,0,0.1);">
+                <div class="bg-white flex flex-col gap-2">
+                    <p class="font-heading font-bold text-heading36 text-accent700">Juan Dela Cruz</p>
+                    <svg
+                          width="155"
+                          height="26"
+                          viewBox="0 0 155 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-grow-0 flex-shrink-0 w-[154.06px] h-[25.56px]"
+                          preserveAspectRatio="none">
+                            <path
+                              d="M148.939 25.5637C148.622 25.5637 148.306 25.4662 148.034 25.2721L141.64 20.687L135.247 25.2721C134.982 25.4627 134.664 25.5647 134.337 25.5636C134.011 25.5624 133.693 25.4582 133.43 25.2658C133.166 25.0745 132.969 24.8049 132.867 24.4953C132.766 24.1858 132.764 23.852 132.863 23.5415L135.248 15.8457L128.911 11.3809C128.649 11.1871 128.454 10.9156 128.354 10.6049C128.254 10.2942 128.254 9.95997 128.355 9.64947C128.456 9.33973 128.652 9.06967 128.916 8.87744C129.179 8.68522 129.496 8.58056 129.821 8.57826L137.669 8.56647L140.167 1.06166C140.271 0.752497 140.468 0.483606 140.733 0.293068C140.997 0.102529 141.315 0 141.641 0C141.967 0 142.284 0.102529 142.549 0.293068C142.813 0.483606 143.011 0.752497 143.114 1.06166L145.57 8.56647L153.457 8.57826C153.784 8.5801 154.101 8.6847 154.365 8.87722C154.628 9.06973 154.824 9.34035 154.925 9.65065C155.026 9.96095 155.026 10.2951 154.926 10.6057C154.826 10.9163 154.631 11.1876 154.368 11.3809L148.032 15.8457L150.417 23.5415C150.516 23.8519 150.514 24.1857 150.413 24.4953C150.311 24.8049 150.115 25.0745 149.851 25.2658C149.586 25.4597 149.267 25.5641 148.939 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M117.105 25.5637C116.788 25.5637 116.472 25.4662 116.2 25.2721L109.806 20.687L103.413 25.2721C103.148 25.4627 102.83 25.5647 102.503 25.5636C102.177 25.5624 101.859 25.4582 101.596 25.2658C101.332 25.0745 101.135 24.8049 101.033 24.4953C100.932 24.1858 100.93 23.852 101.029 23.5415L103.414 15.8457L97.0774 11.3809C96.8148 11.1871 96.6198 10.9156 96.5199 10.6049C96.4201 10.2942 96.4204 9.95997 96.521 9.64947C96.6223 9.33973 96.8184 9.06967 97.0815 8.87744C97.3447 8.68522 97.6616 8.58056 97.9875 8.57826L105.835 8.56647L108.333 1.06166C108.437 0.752497 108.634 0.483606 108.899 0.293068C109.163 0.102529 109.481 0 109.807 0C110.133 0 110.45 0.102529 110.715 0.293068C110.979 0.483606 111.177 0.752497 111.28 1.06166L113.736 8.56647L121.623 8.57826C121.95 8.5801 122.267 8.6847 122.531 8.87722C122.794 9.06973 122.99 9.34035 123.091 9.65065C123.192 9.96095 123.192 10.2951 123.092 10.6057C122.992 10.9163 122.797 11.1876 122.534 11.3809L116.198 15.8457L118.583 23.5415C118.682 23.8519 118.68 24.1857 118.579 24.4953C118.477 24.8049 118.281 25.0745 118.017 25.2658C117.752 25.4597 117.433 25.5641 117.105 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M85.2692 25.5637C84.9517 25.5637 84.6358 25.4662 84.3638 25.2721L77.9703 20.687L71.5768 25.2721C71.3119 25.4627 70.9936 25.5647 70.6673 25.5636C70.3409 25.5624 70.0233 25.4582 69.7598 25.2658C69.4959 25.0745 69.2992 24.8049 69.1974 24.4953C69.0957 24.1858 69.0942 23.852 69.1931 23.5415L71.5776 15.8457L65.2415 11.3809C64.9789 11.1871 64.7839 10.9156 64.684 10.6049C64.5841 10.2942 64.5845 9.95997 64.685 9.64947C64.7864 9.33973 64.9824 9.06967 65.2456 8.87744C65.5088 8.68522 65.8257 8.58056 66.1516 8.57826L73.999 8.56647L76.4975 1.06166C76.6006 0.752497 76.7984 0.483606 77.0628 0.293068C77.3272 0.102529 77.6448 0 77.9707 0C78.2966 0 78.6143 0.102529 78.8787 0.293068C79.1431 0.483606 79.3408 0.752497 79.4439 1.06166L81.9 8.56647L89.7875 8.57826C90.1138 8.5801 90.4312 8.6847 90.6946 8.87722C90.958 9.06973 91.1541 9.34035 91.2549 9.65065C91.3558 9.96095 91.3563 10.2951 91.2564 10.6057C91.1565 10.9163 90.9612 11.1876 90.6984 11.3809L84.3623 15.8457L86.7468 23.5415C86.8459 23.8519 86.8446 24.1857 86.743 24.4953C86.6414 24.8049 86.4447 25.0745 86.1809 25.2658C85.9165 25.4597 85.5971 25.5641 85.2692 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M53.5563 25.5637C53.2388 25.5637 52.9229 25.4662 52.6509 25.2721L46.2574 20.687L39.8639 25.2721C39.599 25.4627 39.2807 25.5647 38.9544 25.5636C38.6281 25.5624 38.3104 25.4582 38.0469 25.2658C37.7831 25.0745 37.5863 24.8049 37.4845 24.4953C37.3828 24.1858 37.3813 23.852 37.4802 23.5415L39.8647 15.8457L33.5286 11.3809C33.266 11.1871 33.071 10.9156 32.9711 10.6049C32.8713 10.2942 32.8716 9.95997 32.9721 9.64947C33.0735 9.33973 33.2696 9.06967 33.5327 8.87744C33.7959 8.68522 34.1128 8.58056 34.4387 8.57826L42.2861 8.56647L44.7846 1.06166C44.8877 0.752497 45.0855 0.483606 45.3499 0.293068C45.6143 0.102529 45.9319 0 46.2578 0C46.5837 0 46.9014 0.102529 47.1658 0.293068C47.4302 0.483606 47.6279 0.752497 47.731 1.06166L50.1871 8.56647L58.0746 8.57826C58.4009 8.5801 58.7183 8.6847 58.9817 8.87722C59.2451 9.06973 59.4412 9.34035 59.542 9.65065C59.6429 9.96095 59.6434 10.2951 59.5435 10.6057C59.4436 10.9163 59.2483 11.1876 58.9855 11.3809L52.6494 15.8457L55.0339 23.5415C55.133 23.8519 55.1317 24.1857 55.0301 24.4953C54.9285 24.8049 54.7318 25.0745 54.468 25.2658C54.2036 25.4597 53.8842 25.5641 53.5563 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M21.6012 25.5637C21.2837 25.5637 20.9678 25.4662 20.6959 25.2721L14.3024 20.687L7.90885 25.2721C7.64395 25.4627 7.32562 25.5647 6.9993 25.5636C6.67298 25.5624 6.35536 25.4582 6.09179 25.2658C5.82797 25.0745 5.6312 24.8049 5.52947 24.4953C5.42773 24.1858 5.42621 23.852 5.52513 23.5415L7.90963 15.8457L1.5735 11.3809C1.31091 11.1871 1.11589 10.9156 1.01604 10.6049C0.91618 10.2942 0.91654 9.95997 1.01706 9.64947C1.11838 9.33973 1.31448 9.06967 1.57764 8.87744C1.8408 8.68522 2.15772 8.58056 2.4836 8.57826L10.3311 8.56647L12.8295 1.06166C12.9326 0.752496 13.1304 0.483606 13.3948 0.293068C13.6592 0.102529 13.9768 0 14.3027 0C14.6287 0 14.9463 0.102529 15.2107 0.293068C15.4751 0.483606 15.6729 0.752496 15.776 1.06166L18.232 8.56647L26.1195 8.57826C26.4458 8.5801 26.7632 8.6847 27.0266 8.87722C27.2901 9.06973 27.4861 9.34035 27.587 9.65065C27.6878 9.96095 27.6883 10.2951 27.5884 10.6057C27.4885 10.9163 27.2933 11.1876 27.0304 11.3809L20.6943 15.8457L23.0788 23.5415C23.1779 23.8519 23.1766 24.1857 23.075 24.4953C22.9734 24.8049 22.7767 25.0745 22.5129 25.2658C22.2485 25.4597 21.9291 25.5641 21.6012 25.5637Z"
+                              fill="#CEC9C1"></path>
+                        </svg>
+                    <p class="font-tbc text-body opacity-40">September 2023</p>
+                </div>
+    
+                <div>
+                    <p>We had an event last September 22 with Elysium Events and Catering Services 
+                        for my nephew’s 7th Birthday, and they have provided an 
+                        awesome experience with their creative setup and amazing 
+                        group of staff.</p>
+                </div>
+            </div>
+        </a>
+
+        <!--Review Card No.2-->
+        <a href="cw-review.html">
+            <div class="flex flex-col rounded-[40px] gap-6 px-11 py-7 bg-white" style="box-shadow: 0px 21px 46px 0 rgba(0,0,0,0.1), 0px 0px 0px 0 rgba(0,0,0,0.1);">
+                <div class="bg-white flex flex-col gap-2">
+                    <p class="font-heading font-bold text-heading36 text-accent700">Juan Dela Cruz</p>
+                    <svg
+                          width="155"
+                          height="26"
+                          viewBox="0 0 155 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-grow-0 flex-shrink-0 w-[154.06px] h-[25.56px]"
+                          preserveAspectRatio="none">
+                            <path
+                              d="M148.939 25.5637C148.622 25.5637 148.306 25.4662 148.034 25.2721L141.64 20.687L135.247 25.2721C134.982 25.4627 134.664 25.5647 134.337 25.5636C134.011 25.5624 133.693 25.4582 133.43 25.2658C133.166 25.0745 132.969 24.8049 132.867 24.4953C132.766 24.1858 132.764 23.852 132.863 23.5415L135.248 15.8457L128.911 11.3809C128.649 11.1871 128.454 10.9156 128.354 10.6049C128.254 10.2942 128.254 9.95997 128.355 9.64947C128.456 9.33973 128.652 9.06967 128.916 8.87744C129.179 8.68522 129.496 8.58056 129.821 8.57826L137.669 8.56647L140.167 1.06166C140.271 0.752497 140.468 0.483606 140.733 0.293068C140.997 0.102529 141.315 0 141.641 0C141.967 0 142.284 0.102529 142.549 0.293068C142.813 0.483606 143.011 0.752497 143.114 1.06166L145.57 8.56647L153.457 8.57826C153.784 8.5801 154.101 8.6847 154.365 8.87722C154.628 9.06973 154.824 9.34035 154.925 9.65065C155.026 9.96095 155.026 10.2951 154.926 10.6057C154.826 10.9163 154.631 11.1876 154.368 11.3809L148.032 15.8457L150.417 23.5415C150.516 23.8519 150.514 24.1857 150.413 24.4953C150.311 24.8049 150.115 25.0745 149.851 25.2658C149.586 25.4597 149.267 25.5641 148.939 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M117.105 25.5637C116.788 25.5637 116.472 25.4662 116.2 25.2721L109.806 20.687L103.413 25.2721C103.148 25.4627 102.83 25.5647 102.503 25.5636C102.177 25.5624 101.859 25.4582 101.596 25.2658C101.332 25.0745 101.135 24.8049 101.033 24.4953C100.932 24.1858 100.93 23.852 101.029 23.5415L103.414 15.8457L97.0774 11.3809C96.8148 11.1871 96.6198 10.9156 96.5199 10.6049C96.4201 10.2942 96.4204 9.95997 96.521 9.64947C96.6223 9.33973 96.8184 9.06967 97.0815 8.87744C97.3447 8.68522 97.6616 8.58056 97.9875 8.57826L105.835 8.56647L108.333 1.06166C108.437 0.752497 108.634 0.483606 108.899 0.293068C109.163 0.102529 109.481 0 109.807 0C110.133 0 110.45 0.102529 110.715 0.293068C110.979 0.483606 111.177 0.752497 111.28 1.06166L113.736 8.56647L121.623 8.57826C121.95 8.5801 122.267 8.6847 122.531 8.87722C122.794 9.06973 122.99 9.34035 123.091 9.65065C123.192 9.96095 123.192 10.2951 123.092 10.6057C122.992 10.9163 122.797 11.1876 122.534 11.3809L116.198 15.8457L118.583 23.5415C118.682 23.8519 118.68 24.1857 118.579 24.4953C118.477 24.8049 118.281 25.0745 118.017 25.2658C117.752 25.4597 117.433 25.5641 117.105 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M85.2692 25.5637C84.9517 25.5637 84.6358 25.4662 84.3638 25.2721L77.9703 20.687L71.5768 25.2721C71.3119 25.4627 70.9936 25.5647 70.6673 25.5636C70.3409 25.5624 70.0233 25.4582 69.7598 25.2658C69.4959 25.0745 69.2992 24.8049 69.1974 24.4953C69.0957 24.1858 69.0942 23.852 69.1931 23.5415L71.5776 15.8457L65.2415 11.3809C64.9789 11.1871 64.7839 10.9156 64.684 10.6049C64.5841 10.2942 64.5845 9.95997 64.685 9.64947C64.7864 9.33973 64.9824 9.06967 65.2456 8.87744C65.5088 8.68522 65.8257 8.58056 66.1516 8.57826L73.999 8.56647L76.4975 1.06166C76.6006 0.752497 76.7984 0.483606 77.0628 0.293068C77.3272 0.102529 77.6448 0 77.9707 0C78.2966 0 78.6143 0.102529 78.8787 0.293068C79.1431 0.483606 79.3408 0.752497 79.4439 1.06166L81.9 8.56647L89.7875 8.57826C90.1138 8.5801 90.4312 8.6847 90.6946 8.87722C90.958 9.06973 91.1541 9.34035 91.2549 9.65065C91.3558 9.96095 91.3563 10.2951 91.2564 10.6057C91.1565 10.9163 90.9612 11.1876 90.6984 11.3809L84.3623 15.8457L86.7468 23.5415C86.8459 23.8519 86.8446 24.1857 86.743 24.4953C86.6414 24.8049 86.4447 25.0745 86.1809 25.2658C85.9165 25.4597 85.5971 25.5641 85.2692 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M53.5563 25.5637C53.2388 25.5637 52.9229 25.4662 52.6509 25.2721L46.2574 20.687L39.8639 25.2721C39.599 25.4627 39.2807 25.5647 38.9544 25.5636C38.6281 25.5624 38.3104 25.4582 38.0469 25.2658C37.7831 25.0745 37.5863 24.8049 37.4845 24.4953C37.3828 24.1858 37.3813 23.852 37.4802 23.5415L39.8647 15.8457L33.5286 11.3809C33.266 11.1871 33.071 10.9156 32.9711 10.6049C32.8713 10.2942 32.8716 9.95997 32.9721 9.64947C33.0735 9.33973 33.2696 9.06967 33.5327 8.87744C33.7959 8.68522 34.1128 8.58056 34.4387 8.57826L42.2861 8.56647L44.7846 1.06166C44.8877 0.752497 45.0855 0.483606 45.3499 0.293068C45.6143 0.102529 45.9319 0 46.2578 0C46.5837 0 46.9014 0.102529 47.1658 0.293068C47.4302 0.483606 47.6279 0.752497 47.731 1.06166L50.1871 8.56647L58.0746 8.57826C58.4009 8.5801 58.7183 8.6847 58.9817 8.87722C59.2451 9.06973 59.4412 9.34035 59.542 9.65065C59.6429 9.96095 59.6434 10.2951 59.5435 10.6057C59.4436 10.9163 59.2483 11.1876 58.9855 11.3809L52.6494 15.8457L55.0339 23.5415C55.133 23.8519 55.1317 24.1857 55.0301 24.4953C54.9285 24.8049 54.7318 25.0745 54.468 25.2658C54.2036 25.4597 53.8842 25.5641 53.5563 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M21.6012 25.5637C21.2837 25.5637 20.9678 25.4662 20.6959 25.2721L14.3024 20.687L7.90885 25.2721C7.64395 25.4627 7.32562 25.5647 6.9993 25.5636C6.67298 25.5624 6.35536 25.4582 6.09179 25.2658C5.82797 25.0745 5.6312 24.8049 5.52947 24.4953C5.42773 24.1858 5.42621 23.852 5.52513 23.5415L7.90963 15.8457L1.5735 11.3809C1.31091 11.1871 1.11589 10.9156 1.01604 10.6049C0.91618 10.2942 0.91654 9.95997 1.01706 9.64947C1.11838 9.33973 1.31448 9.06967 1.57764 8.87744C1.8408 8.68522 2.15772 8.58056 2.4836 8.57826L10.3311 8.56647L12.8295 1.06166C12.9326 0.752496 13.1304 0.483606 13.3948 0.293068C13.6592 0.102529 13.9768 0 14.3027 0C14.6287 0 14.9463 0.102529 15.2107 0.293068C15.4751 0.483606 15.6729 0.752496 15.776 1.06166L18.232 8.56647L26.1195 8.57826C26.4458 8.5801 26.7632 8.6847 27.0266 8.87722C27.2901 9.06973 27.4861 9.34035 27.587 9.65065C27.6878 9.96095 27.6883 10.2951 27.5884 10.6057C27.4885 10.9163 27.2933 11.1876 27.0304 11.3809L20.6943 15.8457L23.0788 23.5415C23.1779 23.8519 23.1766 24.1857 23.075 24.4953C22.9734 24.8049 22.7767 25.0745 22.5129 25.2658C22.2485 25.4597 21.9291 25.5641 21.6012 25.5637Z"
+                              fill="#CEC9C1"></path>
+                        </svg>
+                    <p class="font-tbc text-body opacity-40">September 2023</p>
+                </div>
+    
+                <div>
+                    <p>We had an event last September 22 with Elysium Events and Catering Services 
+                        for my nephew’s 7th Birthday, and they have provided an 
+                        awesome experience with their creative setup and amazing 
+                        group of staff.</p>
+                </div>
+            </div>
+        </a>
+
+        <!--Review Card No.3-->
+        <a href="cw-review.html">
+            <div class="flex flex-col rounded-[40px] gap-6 px-11 py-7 bg-white" style="box-shadow: 0px 21px 46px 0 rgba(0,0,0,0.1), 0px 0px 0px 0 rgba(0,0,0,0.1);">
+                <div class="bg-white flex flex-col gap-2">
+                    <p class="font-heading font-bold text-heading36 text-accent700">Juan Dela Cruz</p>
+                    <svg
+                          width="155"
+                          height="26"
+                          viewBox="0 0 155 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="flex-grow-0 flex-shrink-0 w-[154.06px] h-[25.56px]"
+                          preserveAspectRatio="none">
+                            <path
+                              d="M148.939 25.5637C148.622 25.5637 148.306 25.4662 148.034 25.2721L141.64 20.687L135.247 25.2721C134.982 25.4627 134.664 25.5647 134.337 25.5636C134.011 25.5624 133.693 25.4582 133.43 25.2658C133.166 25.0745 132.969 24.8049 132.867 24.4953C132.766 24.1858 132.764 23.852 132.863 23.5415L135.248 15.8457L128.911 11.3809C128.649 11.1871 128.454 10.9156 128.354 10.6049C128.254 10.2942 128.254 9.95997 128.355 9.64947C128.456 9.33973 128.652 9.06967 128.916 8.87744C129.179 8.68522 129.496 8.58056 129.821 8.57826L137.669 8.56647L140.167 1.06166C140.271 0.752497 140.468 0.483606 140.733 0.293068C140.997 0.102529 141.315 0 141.641 0C141.967 0 142.284 0.102529 142.549 0.293068C142.813 0.483606 143.011 0.752497 143.114 1.06166L145.57 8.56647L153.457 8.57826C153.784 8.5801 154.101 8.6847 154.365 8.87722C154.628 9.06973 154.824 9.34035 154.925 9.65065C155.026 9.96095 155.026 10.2951 154.926 10.6057C154.826 10.9163 154.631 11.1876 154.368 11.3809L148.032 15.8457L150.417 23.5415C150.516 23.8519 150.514 24.1857 150.413 24.4953C150.311 24.8049 150.115 25.0745 149.851 25.2658C149.586 25.4597 149.267 25.5641 148.939 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M117.105 25.5637C116.788 25.5637 116.472 25.4662 116.2 25.2721L109.806 20.687L103.413 25.2721C103.148 25.4627 102.83 25.5647 102.503 25.5636C102.177 25.5624 101.859 25.4582 101.596 25.2658C101.332 25.0745 101.135 24.8049 101.033 24.4953C100.932 24.1858 100.93 23.852 101.029 23.5415L103.414 15.8457L97.0774 11.3809C96.8148 11.1871 96.6198 10.9156 96.5199 10.6049C96.4201 10.2942 96.4204 9.95997 96.521 9.64947C96.6223 9.33973 96.8184 9.06967 97.0815 8.87744C97.3447 8.68522 97.6616 8.58056 97.9875 8.57826L105.835 8.56647L108.333 1.06166C108.437 0.752497 108.634 0.483606 108.899 0.293068C109.163 0.102529 109.481 0 109.807 0C110.133 0 110.45 0.102529 110.715 0.293068C110.979 0.483606 111.177 0.752497 111.28 1.06166L113.736 8.56647L121.623 8.57826C121.95 8.5801 122.267 8.6847 122.531 8.87722C122.794 9.06973 122.99 9.34035 123.091 9.65065C123.192 9.96095 123.192 10.2951 123.092 10.6057C122.992 10.9163 122.797 11.1876 122.534 11.3809L116.198 15.8457L118.583 23.5415C118.682 23.8519 118.68 24.1857 118.579 24.4953C118.477 24.8049 118.281 25.0745 118.017 25.2658C117.752 25.4597 117.433 25.5641 117.105 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M85.2692 25.5637C84.9517 25.5637 84.6358 25.4662 84.3638 25.2721L77.9703 20.687L71.5768 25.2721C71.3119 25.4627 70.9936 25.5647 70.6673 25.5636C70.3409 25.5624 70.0233 25.4582 69.7598 25.2658C69.4959 25.0745 69.2992 24.8049 69.1974 24.4953C69.0957 24.1858 69.0942 23.852 69.1931 23.5415L71.5776 15.8457L65.2415 11.3809C64.9789 11.1871 64.7839 10.9156 64.684 10.6049C64.5841 10.2942 64.5845 9.95997 64.685 9.64947C64.7864 9.33973 64.9824 9.06967 65.2456 8.87744C65.5088 8.68522 65.8257 8.58056 66.1516 8.57826L73.999 8.56647L76.4975 1.06166C76.6006 0.752497 76.7984 0.483606 77.0628 0.293068C77.3272 0.102529 77.6448 0 77.9707 0C78.2966 0 78.6143 0.102529 78.8787 0.293068C79.1431 0.483606 79.3408 0.752497 79.4439 1.06166L81.9 8.56647L89.7875 8.57826C90.1138 8.5801 90.4312 8.6847 90.6946 8.87722C90.958 9.06973 91.1541 9.34035 91.2549 9.65065C91.3558 9.96095 91.3563 10.2951 91.2564 10.6057C91.1565 10.9163 90.9612 11.1876 90.6984 11.3809L84.3623 15.8457L86.7468 23.5415C86.8459 23.8519 86.8446 24.1857 86.743 24.4953C86.6414 24.8049 86.4447 25.0745 86.1809 25.2658C85.9165 25.4597 85.5971 25.5641 85.2692 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M53.5563 25.5637C53.2388 25.5637 52.9229 25.4662 52.6509 25.2721L46.2574 20.687L39.8639 25.2721C39.599 25.4627 39.2807 25.5647 38.9544 25.5636C38.6281 25.5624 38.3104 25.4582 38.0469 25.2658C37.7831 25.0745 37.5863 24.8049 37.4845 24.4953C37.3828 24.1858 37.3813 23.852 37.4802 23.5415L39.8647 15.8457L33.5286 11.3809C33.266 11.1871 33.071 10.9156 32.9711 10.6049C32.8713 10.2942 32.8716 9.95997 32.9721 9.64947C33.0735 9.33973 33.2696 9.06967 33.5327 8.87744C33.7959 8.68522 34.1128 8.58056 34.4387 8.57826L42.2861 8.56647L44.7846 1.06166C44.8877 0.752497 45.0855 0.483606 45.3499 0.293068C45.6143 0.102529 45.9319 0 46.2578 0C46.5837 0 46.9014 0.102529 47.1658 0.293068C47.4302 0.483606 47.6279 0.752497 47.731 1.06166L50.1871 8.56647L58.0746 8.57826C58.4009 8.5801 58.7183 8.6847 58.9817 8.87722C59.2451 9.06973 59.4412 9.34035 59.542 9.65065C59.6429 9.96095 59.6434 10.2951 59.5435 10.6057C59.4436 10.9163 59.2483 11.1876 58.9855 11.3809L52.6494 15.8457L55.0339 23.5415C55.133 23.8519 55.1317 24.1857 55.0301 24.4953C54.9285 24.8049 54.7318 25.0745 54.468 25.2658C54.2036 25.4597 53.8842 25.5641 53.5563 25.5637Z"
+                              fill="#FFAC33"></path>
+                            <path
+                              d="M21.6012 25.5637C21.2837 25.5637 20.9678 25.4662 20.6959 25.2721L14.3024 20.687L7.90885 25.2721C7.64395 25.4627 7.32562 25.5647 6.9993 25.5636C6.67298 25.5624 6.35536 25.4582 6.09179 25.2658C5.82797 25.0745 5.6312 24.8049 5.52947 24.4953C5.42773 24.1858 5.42621 23.852 5.52513 23.5415L7.90963 15.8457L1.5735 11.3809C1.31091 11.1871 1.11589 10.9156 1.01604 10.6049C0.91618 10.2942 0.91654 9.95997 1.01706 9.64947C1.11838 9.33973 1.31448 9.06967 1.57764 8.87744C1.8408 8.68522 2.15772 8.58056 2.4836 8.57826L10.3311 8.56647L12.8295 1.06166C12.9326 0.752496 13.1304 0.483606 13.3948 0.293068C13.6592 0.102529 13.9768 0 14.3027 0C14.6287 0 14.9463 0.102529 15.2107 0.293068C15.4751 0.483606 15.6729 0.752496 15.776 1.06166L18.232 8.56647L26.1195 8.57826C26.4458 8.5801 26.7632 8.6847 27.0266 8.87722C27.2901 9.06973 27.4861 9.34035 27.587 9.65065C27.6878 9.96095 27.6883 10.2951 27.5884 10.6057C27.4885 10.9163 27.2933 11.1876 27.0304 11.3809L20.6943 15.8457L23.0788 23.5415C23.1779 23.8519 23.1766 24.1857 23.075 24.4953C22.9734 24.8049 22.7767 25.0745 22.5129 25.2658C22.2485 25.4597 21.9291 25.5641 21.6012 25.5637Z"
+                              fill="#CEC9C1"></path>
+                        </svg>
+                    <p class="font-tbc text-body opacity-40">September 2023</p>
+                </div>
+    
+                <div>
+                    <p>We had an event last September 22 with Elysium Events and Catering Services 
+                        for my nephew’s 7th Birthday, and they have provided an 
+                        awesome experience with their creative setup and amazing 
+                        group of staff.</p>
+                </div>
+            </div>
+        </a>
+
+        <a class="font-heading font-bold text-heading36 text-secondary600 underline" href="">Read More</a>
+    </div>
+    <!--End of Client Testimonials section-->
+
+    <!--Footer-->
+    <div class="w-screen h-40 bg-secondary400 bg-cover bg-center" style="background-image: url(img/CW-FooterBG.png);">
+        <div class="h-40"></div>
+
+        <!--Copyright-->
+        <div class="flex justify-center items-center w-screen bg-primary300 p-2">
+            <p class="font-tbc font-semibold text-caption text-white">Copyright © 2023 FBE | All Rights Reserved</p>
+        </div>
+    </div>
 </body>
 </html>
