@@ -67,7 +67,7 @@ module.exports = {
     },
 
     screens:{
-      'monitor': '1280px',
+      'monitor': '1440px',
       'ipadmini':'744px',
     },
 
